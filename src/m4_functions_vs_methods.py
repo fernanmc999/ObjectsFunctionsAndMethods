@@ -81,7 +81,7 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
     try_methods()
-    try_functions(200,100,300,30,100,200,0,0,-50,50,100,100)
+    try_functions()
     try_methods_and_functions()
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -188,31 +188,18 @@ def try_methods():
     ####################################################################
 
 
-def try_functions(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6):
+def try_functions():
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
-    funturtle1=rg.SimpleTurtle()
-    funturtle2=rg.SimpleTurtle()
-    funturtle3=rg.SimpleTurtle()
+    jump_and_move_turtle(200,100,300,30)
 
-    funturtle1.pen_up()
-    funturtle1.go_to(rg.Point(x1,y1))
-    funturtle1.pen_down()
-    funturtle1.go_to(rg.Point(x2,y2))
+    jump_and_move_turtle(100,200,0,0)
 
-    funturtle2.pen_up()
-    funturtle2.go_to(rg.Point(x3, y3))
-    funturtle2.pen_down()
-    funturtle2.go_to(rg.Point(x4, y4))
-
-    funturtle3.pen_up()
-    funturtle3.go_to(rg.Point(x5, y5))
-    funturtle3.pen_down()
-    funturtle3.go_to(rg.Point(x6, y6))
+    jump_and_move_turtle(-50,50,100,100)
     ####################################################################
     # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
