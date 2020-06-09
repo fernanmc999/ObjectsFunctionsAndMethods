@@ -23,7 +23,6 @@ def goodbye():
     print('   Ciao!')
     print('   Bai bai!')
 
-
 def hello_and_goodbye():
     hello()
     goodbye()
